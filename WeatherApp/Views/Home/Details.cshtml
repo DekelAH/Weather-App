@@ -1,0 +1,60 @@
+﻿@using WeatherApp.Models;
+@model CityWeather;
+
+@{
+    string mainHeader = "City Weather Details";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.appTitle</title>
+    <meta charset="utf-8" />
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="header">@mainHeader</h1>
+    <div class="flex page-content" style="flex-direction: column">
+        @if (Model.TempCelsius < 7)
+        {
+            <div class="blue-back box flex-borderless w-25">
+                <div class="w-50">
+                    <h3>@Model.CityName</h3>
+                    <p>@Model.DateAndTime?.ToString("hh:mm tt");</p>
+                </div>
+                <div class="border-left w-50">
+                    <h2 class="text-center">@Model.TempCelsius&deg;C</h2>
+                </div>
+            </div>
+        }
+        else if (Model.TempCelsius >= 7 && Model.TempCelsius <= 24)
+        {
+            <div class="green-back box flex-borderless w-25">
+                <div class="w-50">
+                    <h3>@Model.CityName</h3>
+                    <p>@Model.DateAndTime?.ToString("hh:mm tt");</p>
+                </div>
+                <div class="border-left w-50">
+                    <h2 class="text-center">@Model.TempCelsius&deg;C</h2>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="orange-back box flex-borderless w-25">
+                <div class="w-50">
+                    <h3>@Model.CityName</h3>
+                    <p>@Model.DateAndTime?.ToString("hh:mm tt");</p>
+                </div>
+                <div class="border-left w-50">
+                    <h2 class="text-center">@Model.TempCelsius&deg;C</h2>
+                </div>
+            </div>
+        }
+        <div style="text-align: center; border: none; box-shadow: none; padding: 0px">
+            <a href="/home">Back To Home Weather Page</a>
+        </div>
+    </div>
+</body>
+</html>
+
