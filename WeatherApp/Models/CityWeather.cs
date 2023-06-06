@@ -1,9 +1,14 @@
-﻿namespace WeatherApp.Models
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace WeatherApp.Models
 {
     public class CityWeather
     {
         #region Properties
 
+        [Required(ErrorMessage = "'{0}' Can't be null or empty, please enter a valid code.")]
+        [DisplayName("City Unique Code")]
         public string? CityUniqueCode { get; set; }
         public string? CityName { get; set; }
         public DateTime? DateAndTime { get; set; }

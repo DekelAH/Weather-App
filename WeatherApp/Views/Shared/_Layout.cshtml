@@ -1,0 +1,19 @@
+﻿@{
+    string mainHeader = "City Weather Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="header">@mainHeader</h1>
+    <div class="flex page-content">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,62 +1,45 @@
 ﻿@using WeatherApp.Models;
 @model IEnumerable<CityWeather>;
 
-@{
-    string mainHeader = "Weather";
+@foreach (CityWeather cityWeather in Model)
+{
+    if (cityWeather.TempCelsius < 7)
+    {
+        <div class="blue-back box flex-borderless w-25">
+            <div class="w-50">
+                <h3>@cityWeather.CityName</h3>
+                <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
+                <a href="/details/@cityWeather.CityUniqueCode">Details</a>
+            </div>
+            <div class="border-left w-50">
+                <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
+            </div>
+        </div>
+    }
+    else if (cityWeather.TempCelsius >= 7 && cityWeather.TempCelsius <= 24)
+    {
+        <div class="green-back box flex-borderless w-25">
+            <div class="w-50">
+                <h3>@cityWeather.CityName</h3>
+                <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
+                <a href="/details/@cityWeather.CityUniqueCode">Details</a>
+            </div>
+            <div class="border-left w-50">
+                <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="orange-back box flex-borderless w-25">
+            <div class="w-50">
+                <h3>@cityWeather.CityName</h3>
+                <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
+                <a href="/details/@cityWeather.CityUniqueCode">Details</a>
+            </div>
+            <div class="border-left w-50">
+                <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
+            </div>
+        </div>
+    }
 }
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>@ViewBag.appTitle</title>
-    <meta charset="utf-8" />
-    <link href="~/StyleSheet.css" rel="stylesheet" />
-</head>
-<body>
-    <h1 class="header">@mainHeader</h1>
-    <div class="flex page-content">
-        @foreach (CityWeather cityWeather in Model)
-        {
-            if (cityWeather.TempCelsius < 7)
-            {
-                <div class="blue-back box flex-borderless w-25">
-                    <div class="w-50">
-                        <h3>@cityWeather.CityName</h3>
-                        <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
-                        <a href="/details/@cityWeather.CityUniqueCode">Details</a>
-                    </div>
-                    <div class="border-left w-50">
-                        <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
-                    </div>
-                </div>
-            }
-            else if (cityWeather.TempCelsius >= 7 && cityWeather.TempCelsius <= 24)
-            {
-                <div class="green-back box flex-borderless w-25">
-                    <div class="w-50">
-                        <h3>@cityWeather.CityName</h3>
-                        <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
-                        <a href="/details/@cityWeather.CityUniqueCode">Details</a>
-                    </div>
-                    <div class="border-left w-50">
-                        <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
-                    </div>
-                </div>
-            }
-            else
-            {
-                <div class="orange-back box flex-borderless w-25">
-                    <div class="w-50">
-                        <h3>@cityWeather.CityName</h3>
-                        <p>@cityWeather.DateAndTime?.ToString("hh:mm tt");</p>
-                        <a href="/details/@cityWeather.CityUniqueCode">Details</a>
-                    </div>
-                    <div class="border-left w-50">
-                        <h2 class="text-center">@cityWeather.TempCelsius&deg;C</h2>
-                    </div>
-                </div>
-            }
-        }
-    </div>
-</body>
-</html>
