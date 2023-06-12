@@ -56,3 +56,12 @@ D:\Programming\Github Projects\Weather-App\WeatherApp\obj\Debug\net6.0\refint\We
 D:\Programming\Github Projects\Weather-App\WeatherApp\obj\Debug\net6.0\WeatherApp.pdb
 D:\Programming\Github Projects\Weather-App\WeatherApp\obj\Debug\net6.0\WeatherApp.genruntimeconfig.cache
 D:\Programming\Github Projects\Weather-App\WeatherApp\obj\Debug\net6.0\ref\WeatherApp.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\Autofac.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\obj\Debug\net6.0\WeatherApp.csproj.CopyComplete
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\ServiceContracts.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\WeatherCitiesData.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\ServiceContracts.pdb
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\WeatherCitiesData.pdb
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\Services.dll
+D:\Programming\Github Projects\Weather-App\WeatherApp\bin\Debug\net6.0\Services.pdb

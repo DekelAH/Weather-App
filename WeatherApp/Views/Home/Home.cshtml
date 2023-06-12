@@ -1,7 +1,11 @@
-﻿@using WeatherApp.Models;
-@model IEnumerable<CityWeather>;
+﻿@model IEnumerable<CityWeather>
+@inject IWeatherService weatherServiceInView;
 
-@foreach (CityWeather cityWeather in Model)
+@{
+    List<CityWeather> cityWeatherInView = weatherServiceInView.GetCitiesWeatherList();
+}
+
+@foreach (CityWeather cityWeather in cityWeatherInView)
 {
     if (cityWeather.TempCelsius < 7)
     {

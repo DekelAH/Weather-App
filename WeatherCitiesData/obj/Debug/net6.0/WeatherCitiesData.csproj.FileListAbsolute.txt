@@ -1,0 +1,12 @@
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\bin\Debug\net6.0\WeatherCitiesData.deps.json
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\bin\Debug\net6.0\WeatherCitiesData.dll
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\bin\Debug\net6.0\WeatherCitiesData.pdb
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.csproj.AssemblyReference.cache
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.AssemblyInfoInputs.cache
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.AssemblyInfo.cs
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.csproj.CoreCompileInputs.cache
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.dll
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\refint\WeatherCitiesData.dll
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\WeatherCitiesData.pdb
+D:\Programming\Github Projects\Weather-App\WeatherCitiesData\obj\Debug\net6.0\ref\WeatherCitiesData.dll

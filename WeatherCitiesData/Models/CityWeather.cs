@@ -1,13 +1,14 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
-namespace WeatherApp.Models
+namespace WeatherCitiesData.Models
 {
     public class CityWeather
     {
         #region Properties
 
         [Required(ErrorMessage = "'{0}' Can't be null or empty, please enter a valid code.")]
+        [RegularExpression("^[A-Za-z.]*$", ErrorMessage = "'{0}' should contain only alphabets and space")]
         [DisplayName("City Unique Code")]
         public string? CityUniqueCode { get; set; }
         public string? CityName { get; set; }
@@ -20,13 +21,13 @@ namespace WeatherApp.Models
 
         public static CityWeather? GetCityByUniqueCode(string uniqueCode)
         {
-            var cities = GetCityWeathers();
+            var cities = GetCityWeathersData();
             var matchedCityWeather = cities.Where(temp => temp.CityUniqueCode == uniqueCode).FirstOrDefault();
 
             return matchedCityWeather;
         }
 
-        public static List<CityWeather> GetCityWeathers()
+        public static List<CityWeather> GetCityWeathersData()
         {
             List<CityWeather> cityWeathers = new()
             {
