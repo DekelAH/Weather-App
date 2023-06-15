@@ -5,6 +5,9 @@
     List<CityWeather> cityWeatherInView = weatherServiceInView.GetCitiesWeatherList();
 }
 
+<div>
+    <h4>Enviroment is: @ViewBag.webHostEnviroment</h4>
+</div>
 @foreach (CityWeather cityWeather in cityWeatherInView)
 {
     if (cityWeather.TempCelsius < 7)

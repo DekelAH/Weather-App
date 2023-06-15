@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dNld57F04JUOOiNdpRvVQv2IooVVe0dnQgsI4uelHXgiXAcOFjAvsWxktgvWcuFMegIL4UuN+iHZ4yxtoTltMA==",
+  "dgSpecHash": "JudT9CpOZjGOWGi6ieaMKy6yo5gAPUMrAkgSUZDMEktwSq9PVPi54vHXO6eMM8RYujKHSmN+VxHtYact4TYkaA==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
+  "projectFilePath": "D:\\programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

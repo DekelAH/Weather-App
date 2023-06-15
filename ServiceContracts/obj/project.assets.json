@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
+      "projectUniqueName": "D:\\programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
       "projectName": "ServiceContracts",
-      "projectPath": "D:\\Programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
+      "projectPath": "D:\\programming\\Github Projects\\Weather-App\\ServiceContracts\\ServiceContracts.csproj",
       "packagesPath": "C:\\Users\\dekel\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Github Projects\\Weather-App\\ServiceContracts\\obj\\",
+      "outputPath": "D:\\programming\\Github Projects\\Weather-App\\ServiceContracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dekel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Programming\\Github Projects\\Weather-App\\WeatherCitiesData\\WeatherCitiesData.csproj": {
-              "projectPath": "D:\\Programming\\Github Projects\\Weather-App\\WeatherCitiesData\\WeatherCitiesData.csproj"
+            "D:\\programming\\Github Projects\\Weather-App\\WeatherCitiesData\\WeatherCitiesData.csproj": {
+              "projectPath": "D:\\programming\\Github Projects\\Weather-App\\WeatherCitiesData\\WeatherCitiesData.csproj"
             }
           }
         }
